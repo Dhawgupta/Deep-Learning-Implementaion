@@ -16,7 +16,7 @@ from keras.utils.np_utils import to_categorical
 
 img_rows =28
 img_cols = 28
-
+# Taking and cutting the training and testing data
 (X_train, y_train), (X_test, y_test) = mnist.load_data()
 if K.image_dim_ordering() == 'th':
     X_train = X_train.reshape(X_train.shape[0], img_rows*img_cols)
